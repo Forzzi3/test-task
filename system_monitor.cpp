@@ -50,6 +50,7 @@ private:
     std::thread monitorThread_;
     bool running_ = false;
 
+    //Загружаем конфиг
     void loadConfig(const std::string& path) {
         try {
             std::ifstream configFile(path);
